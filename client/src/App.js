@@ -6,11 +6,11 @@ import Header from './components/headers/Header';
 import Routes from './routes';
 
 const App = () => (
-	<Grid>
-		<TopNavigation />
-		<Header />
-		<Routes />
-	</Grid>
+  <Grid>
+    <TopNavigation />
+    <Header />
+    <Routes />
+  </Grid>
 );
 
 export default App;
