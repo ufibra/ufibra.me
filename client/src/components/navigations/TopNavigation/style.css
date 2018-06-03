@@ -1,0 +1,9 @@
+.ufibra-navbar {
+	background-color: #ffffff;
+	border: none;
+}
+
+.navbar-brand {
+	display: flex;
+	align-items: center;
+}
