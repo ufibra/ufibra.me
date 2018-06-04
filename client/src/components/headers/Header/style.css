@@ -3,6 +3,12 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .ufibra-header small {
   float: left;
+=======
+.ufibra-header h3 {
+  float: left;
+  margin-left: 1%;
+>>>>>>> master
 }
