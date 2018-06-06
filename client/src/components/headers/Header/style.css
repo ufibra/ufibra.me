@@ -1,6 +1,9 @@
 .ufibra-header {
   padding: 0;
   text-align: center;
+  margin-top: 8px;
+  margin-bottom: 25px;
+  border-bottom: none;
 }
 
 .ufibra-header h3 {
