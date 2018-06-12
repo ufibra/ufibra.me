@@ -1,17 +1,19 @@
 import React from 'react';
-import { PageHeader } from 'react-bootstrap';
+import { PageHeader, Col } from 'react-bootstrap';
 
 import SearchContainer from '../../containers/SearchContainer';
 
 import './style.css';
 
 const Header = () => (
-  <PageHeader className='ufibra-header'>
+  <Col xs={12} sm={12} md={12}>
+    <PageHeader className='ufibra-header'>
 
-    <h3>Compare os melhores suplementos das maiores lojas virtuais do Brasil</h3>
+      <small>Compare os melhores suplementos das maiores lojas virtuais do Brasil</small>
 
-    <SearchContainer />
-  </PageHeader>
+      <SearchContainer />
+    </PageHeader>
+  </Col>
 );
 
 export default Header;

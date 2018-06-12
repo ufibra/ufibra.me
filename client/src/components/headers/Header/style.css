@@ -1,12 +1,10 @@
 .ufibra-header {
   padding: 0;
   text-align: center;
-  margin-top: 8px;
-  margin-bottom: 25px;
-  border-bottom: none;
+  margin-top: 3.5%;
+  margin-bottom: 3%;
 }
 
-.ufibra-header h3 {
+.ufibra-header small {
   float: left;
-  margin-left: 1%;
 }

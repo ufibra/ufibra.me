@@ -1,13 +1,8 @@
-.ufibra-navbar {
-  background-color: #ffffff;
-  border: none;
+.ufibra-topNav {
+  text-align: center;
 }
 
-.navbar-brand {
-  display: flex;
-  align-items: center;
+.ufibra-topNav img{
+  margin-top: 3%;
 }
 
-.ufibra-logo img {
-  margin-top: 23px;
-}
