@@ -1,10 +1,20 @@
-.ufibra-header {
+.home-header .ufibra-header {
   padding: 0;
   text-align: center;
   margin-top: 3.5%;
   margin-bottom: 3%;
 }
 
-.ufibra-header small {
-  float: left;
+.home-header .center {
+  text-align: center;
 }
+
+.home-header .form-group{
+  width: 87%;
+  margin-bottom: 4%;
+}
+
+.home-header .form-inline .form-control {
+  width: 87%;
+}
+
