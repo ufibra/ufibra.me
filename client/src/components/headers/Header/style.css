@@ -1,10 +1,31 @@
-.ufibra-header {
+.home-header h3{
   padding: 0;
   text-align: center;
   margin-top: 3.5%;
   margin-bottom: 3%;
 }
 
-.ufibra-header small {
-  float: left;
+.home-header .center {
+  text-align: center;
+}
+
+.home-header .form-group {
+  width: 87%;
+  margin-bottom: 4%;
+}
+
+.home-header .form-inline .form-control {
+  width: 87%;
+}
+
+@media screen and (max-width: 414px) {
+  .home-header .form-group {
+    display: flex;
+  }
+  .home-header h3{
+    margin-top: 5.5%;
+    margin-bottom: 4%;
+    line-height: 1.4em;
+    font-size: 20px;
+  }
 }
