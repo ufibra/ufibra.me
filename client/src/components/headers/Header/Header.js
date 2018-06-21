@@ -8,7 +8,7 @@ import './style.css';
 const Header = () => (
   <div className="home-header">
     <Col xs={12} sm={12} md={12}>
-      <h3 className='ufibra-header'>
+      <h3>
         Compare aqui os melhores suplementos das <br/> maiores lojas virtuais do Brasil
       </h3>
     </Col>
