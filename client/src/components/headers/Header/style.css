@@ -3,6 +3,8 @@
   text-align: center;
   margin-top: 3.5%;
   margin-bottom: 3%;
+  line-height: 1.2em;
+  color: #2eb2ff;
 }
 
 .home-header .center {
@@ -16,6 +18,11 @@
 
 .home-header .form-inline .form-control {
   width: 87%;
+  border-color: #2eb2ff;
+}
+
+.home-header .form-group button{
+  border-color: #99e265;
 }
 
 @media screen and (max-width: 414px) {
