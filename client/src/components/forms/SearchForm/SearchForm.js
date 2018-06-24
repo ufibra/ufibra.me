@@ -1,12 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  Button,
-  Form,
-  FormControl,
-  FormGroup,
-  Glyphicon,
-} from 'react-bootstrap';
+
+import "./style.css";
 
 class SearchForm extends React.Component {
 
@@ -32,19 +27,24 @@ class SearchForm extends React.Component {
     const { data } = this.state;
 
     return (
-      <Form inline onSubmit={this.onSubmit}>
-        <FormGroup role='form'>
-          <FormControl
-            type='text'
-            value={data.query}
-            placeholder='Procure por produtos...'
-            onChange={this.onChange}
-          />
-          <Button type='submit'>
-            <Glyphicon glyph='search' />
-          </Button>
-        </FormGroup>
-      </Form>
+      <form onSubmit={this.onSubmit}>
+	<div className="form-group">
+	  <div className="input-group col-md-4 offset-md-4">
+	    <input
+	      className="form-control border-right-0 border"
+	      onChange={this.onChange}
+	      type="search"
+	      value={data.query}
+	      placeholder='Procure por produtos...'
+	    />
+	    <span className="input-group-append">
+	      <button className="btn btn-outline-secondary border-left-0 border search-form__button" type="submit">
+		<i className="fa fa-search"/>
+	      </button>
+	    </span>
+	  </div>
+	</div>
+      </form>
     );
   }
 }

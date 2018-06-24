@@ -1,16 +1,15 @@
 import React from 'react';
-import { Grid } from 'react-bootstrap';
 
 import TopNavigation from './components/navigations/TopNavigation';
-import Header from './components/headers/Header';
+import PageFooter from './components/footers/PageFooter';
 import Routes from './routes';
 
 const App = () => (
-  <Grid>
+  <div>
     <TopNavigation />
-    <Header />
     <Routes />
-  </Grid>
+    <PageFooter />
+  </div>
 );
 
 export default App;

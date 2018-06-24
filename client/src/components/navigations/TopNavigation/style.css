@@ -1,8 +1,9 @@
-.ufibra-topNav {
-  text-align: center;
+.top-navigation {
+  padding: 0.5em;
+  border-bottom: 1px solid #2eb2ff;
 }
 
-.ufibra-topNav img{
-  margin-top: 3%;
+.top-navigation .navbar-brand {
+  padding-right: 1%;
+  border-right: 1px solid #c0c0c0;
 }
-

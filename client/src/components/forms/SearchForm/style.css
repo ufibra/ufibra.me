@@ -1,0 +1,10 @@
+.search-form {
+}
+
+.search-form__button {
+  background-color: #99e265;
+}
+
+.search-form__button:hover {
+  background-color: #2eb2ff;
+}
