@@ -11,3 +11,7 @@
   border: 1px solid #87f142;
 }
 
+.hot-container .card-img-top {
+  max-width: 200px;
+}
+

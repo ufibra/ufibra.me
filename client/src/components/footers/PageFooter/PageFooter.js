@@ -15,8 +15,9 @@ const PageFooter = () => (
 	  <ul className="nav navbar-nav d-inline-flex">
 	    <li className="nav-item">
 	      <ul className="list-inline-mb-0">
-		<li className="list-inline-item"><a href="https://www.facebook.com/ufibra"><i className="fa fa-facebook"/></a></li>
-		<li className="list-inline-item"><a href="https://www.instagram.com/ufibra.me/"><i className="fa fa-instagram"/></a></li>
+					<li className="list-inline-item"><a href="#"><i className="fa fa-facebook"/></a></li>
+					<li className="list-inline-item"><a href="https://www.instagram.com/ufibra.me/"><i className="fa fa-instagram"/></a></li>
+					<li className="list-inline-item"><a href="https://www.linkedin.com/company/ufibra-me/"><i className="fa fa-linkedin"/></a></li>
 	      </ul>
 	    </li>
 	  </ul>
