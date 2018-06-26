@@ -28,22 +28,22 @@ class SearchForm extends React.Component {
 
     return (
       <form onSubmit={this.onSubmit}>
-	<div className="form-group">
-	  <div className="input-group col-md-4 offset-md-4">
-	    <input
-	      className="form-control border-right-0 border"
-	      onChange={this.onChange}
-	      type="search"
-	      value={data.query}
-	      placeholder='Procure por produtos...'
-	    />
-	    <span className="input-group-append">
-	      <button className="btn btn-outline-secondary border-left-0 border search-form__button" type="submit">
-		<i className="fa fa-search"/>
-	      </button>
-	    </span>
-	  </div>
-	</div>
+        <div className="form-group">
+          <div className="input-group col-md-4 offset-md-4">
+            <input
+              className="form-control border-right-0 border"
+              onChange={this.onChange}
+              type="search"
+              value={data.query}
+              placeholder='Procure por produtos...'
+            />
+            <span className="input-group-append">
+              <button className="btn btn-outline-secondary border-left-0 border search-form__button" type="submit">
+                <i className="fa fa-search"/>
+              </button>
+            </span>
+          </div>
+        </div>
       </form>
     );
   }

@@ -13,10 +13,10 @@ class SearchContainer extends React.Component {
   render() {
     return (
       <div className="search-container">
-	<SearchForm onSubmit={this.onSubmit} />
-	<h4>
-	  Compare aqui os melhores suplementos das <br/> maiores lojas virtuais do Brasil
-	</h4>
+        <SearchForm onSubmit={this.onSubmit} />
+        <h4>
+          Compare aqui os melhores suplementos das <br/> maiores lojas virtuais do Brasil
+        </h4>
       </div>
     );
   }

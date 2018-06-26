@@ -7,7 +7,7 @@ const Header = () => (
   <header className="default-header">
     <div className="d-flex h-100">
       <div className="col text-center justify-content-center align-self-center">
-	<SearchContainer />
+        <SearchContainer />
       </div>
     </div>
   </header>
