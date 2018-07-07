@@ -15,7 +15,8 @@ const ProductCard = ({ product }) => (
       <p className="card-text">{product.description}</p>
     </div>
     <div className="card-footer product-card__footer">
-      <Link to={product.href} className="btn product-card__btn">IR À LOJA</Link>
+      <Link to={product.href} className="btn product-card__btn">IR À LOJA</Link><br/>
+      <Link to="/comparisons">Ver preços em mais lojas</Link>
     </div>
   </div>
 );
