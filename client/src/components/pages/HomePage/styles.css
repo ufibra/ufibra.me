@@ -1,3 +1,7 @@
 .home-page .container {
   margin-top: 1em;
 }
+.home-page h3 {
+  font-weight: 700;
+  color: #2eb2ff;
+}
