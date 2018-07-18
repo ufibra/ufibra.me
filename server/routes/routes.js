@@ -9,13 +9,15 @@ module.exports = (function() {
   'use strict';
   const router = express.Router();
 
-  router.get('/wheyprotein', function (req, res) {
-    MongoClient.connect(url, function(err, db) {
+  router.get('/wheyprotein', (req, res) => {
+    MongoClient.connect(url, (err, db) => {
       if (err) throw err;
       const dbo = db.db("ufibrame");
-      dbo.collection("wheyprotein").find({}).toArray(function(err, result) {
-        if (err) throw err;
-        console.log(result);
+      dbo.collection("wheyprotein").find({}).toArray((err, result) => {
+        if (err) {
+          res.status(500).json({errors: [err]})
+        }
+        res.json(result);
         db.close();
       });
     });
