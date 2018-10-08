@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: #2eb2ff;
+  margin-top: 1em;
+  height: 100%;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.page-footer h5 {
+  font-weight: 700;
+}
+
+.page-footer .fa-heart {
+  color: red;
+}
+
+.page-footer ul li a {
+  text-decoration: none;
+}
+
+.page-footer i {
+  color: white;
+  font-size: 20px;
+}
+
+.page-footer .list-inline-mb-0 i:hover {
+  color: #99e265;
+}
