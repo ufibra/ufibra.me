@@ -1,14 +1,10 @@
-const mongo = require('mongodb');
-
 const express = require('express');
 
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/";
+const router = express.Router();
 
-module.exports = (function() {
-  'use strict';
-  const router = express.Router();
-
+module.exports = (() => {
   router.get('/wheyprotein', (req, res) => {
     MongoClient.connect(url, (err, db) => {
       if (err) throw err;
@@ -22,7 +18,6 @@ module.exports = (function() {
       });
     });
   })
-
 
   return router;    
 })();
