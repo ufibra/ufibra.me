@@ -1,9 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import axios from 'axios';
 
 import "./style.css";
 
 class Categories extends React.Component {
+
+  componentWillMount () {
+    axios.get(`http://localhost:5000/products/wheyprotein`)
+      .then(res => {
+        console.log(res)
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 
   render() {
 
