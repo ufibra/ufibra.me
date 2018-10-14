@@ -1,48 +1,41 @@
 import React from 'react';
-
+import axios from 'axios';
 import HomeHeader from '../../headers/HomeHeader';
 import ProductCard from '../../cards/ProductCard';
 
 import './styles.css';
 
-// TODO: create a fake api
-const products = [
-  {
-    id: '239120391203912',
-    img: 'http://www.madrugaosuplementos.com.br/media/product/76b/100-whey-protein-900g-optimum-nutrition-creatina-150g-gratis-73b.png',
-    price: '89,90',
-    name: 'Whey Protein',
-    description: 'Proteina para treinar',
-    href: 'http://whey.com/prod'
-  },
-  {
-    id: '239120391203912',
-    img: 'http://www.madrugaosuplementos.com.br/media/product/76b/100-whey-protein-900g-optimum-nutrition-creatina-150g-gratis-73b.png',
-    price: '89,90',
-    name: 'Whey Protein',
-    description: 'Proteina para treinar',
-    href: 'http://whey.com/prod'
-  },
-  {
-    id: '239120391203912',
-    img: 'http://www.madrugaosuplementos.com.br/media/product/76b/100-whey-protein-900g-optimum-nutrition-creatina-150g-gratis-73b.png',
-    price: '89,90',
-    name: 'Whey Protein',
-    description: 'Proteina para treinar',
-    href: 'http://whey.com/prod'
-  },
-]
+class HomePage extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      products: []
+    }
+  }
+  componentWillMount () {
+    axios.get(`http://localhost:5000/products/wheyprotein`)
+      .then(res => {
+        this.setState({products: res.data})
+      })
+      .catch(err => {
+        console.log(err)
+      })
+  }
 
-const HomePage = () => (
-  <section className="home-page">
-    <HomeHeader />
-    <div className="container">
-      <h3>Destaque</h3>
-      <div className="card-deck">
-        {products.map(product => <ProductCard product={product} />)}
-      </div>
-    </div>
-  </section>
-);
+  render () {
+    return (
+      <section className="home-page">
+        <HomeHeader />
+        <div className="container">
+          <h3>Destaque</h3>
+          <div className="card-deck">
+            {this.state.products.map(product => <ProductCard product={product} />)}
+          </div>
+        </div>
+      </section>
+    )
+
+  }
+}
 
 export default HomePage;
