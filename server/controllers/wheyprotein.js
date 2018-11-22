@@ -9,3 +9,14 @@ exports.get = (req, res, next) => {
       res.status(400).send(e);
     });
 }
+
+exports.getOne = (req, res, next) => {
+  const store = req.params;
+  console.log(store)
+  WheyProtein.find({})
+    .then(data => {
+      res.status(200).send(data);
+    }).catch(e => {
+      res.status(400).send(e);
+    });
+}

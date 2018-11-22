@@ -20,6 +20,14 @@ class HomePage extends React.Component {
       .catch(err => {
         console.log(err)
       })
+
+    axios.get(`http://localhost:5000/products/category?category=gsnsuplementos`)
+      .then(res => {
+        this.setState({products: res.data})
+      })
+      .catch(err => {
+        console.log(err)
+      })  
   }
 
   render () {
