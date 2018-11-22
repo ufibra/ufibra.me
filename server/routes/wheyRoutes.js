@@ -3,6 +3,6 @@ const router = express.Router();
 const controller = require('../controllers/wheyprotein');
 
 router.get('/wheyprotein', controller.get);
-router.get('/category', controller.getOne);
+router.get('/store', controller.getOne);
 
 module.exports = router;

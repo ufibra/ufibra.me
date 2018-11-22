@@ -21,7 +21,7 @@ class HomePage extends React.Component {
         console.log(err)
       })
 
-    axios.get(`http://localhost:5000/products/category?category=gsnsuplementos`)
+    axios.get(`http://localhost:5000/products/store?store=gsnsuplementos`)
       .then(res => {
         this.setState({products: res.data})
       })
